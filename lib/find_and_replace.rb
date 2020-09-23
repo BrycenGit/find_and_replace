@@ -5,7 +5,7 @@ class Find
 
   def find_and_replace(word, replacement)
     
-    @string.gsub!(word, replacement)
+    @string.gsub!(/#{word}/i, replacement)
     return @string
   end
 end

@@ -10,8 +10,6 @@ describe("Find#find_and_replace") do
 
   it("replace all and partial matches with desired string, return string") do
     word = Find.new('I am walking my Cat to the cathedral')
-    expect(word.find_and_replace(/cat/i, "dog")).to(eq("I am walking my dog to the doghedral"))
+    expect(word.find_and_replace('cat', "dog")).to(eq("I am walking my dog to the doghedral"))
   end
-
-
 end
